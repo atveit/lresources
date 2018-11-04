@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Software Engineering Leadership</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,12 +20,38 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+		<main>
+			<header>
+				<div class="header__inner">
+					<img class="header__logo" src="" alt="somelogohere">
+					<section>
+						<h1 class="header__title">Software Engineering Leadership Resources</h1>
+						<h2 class="header__author">Maintained by Amund Tveit</h2>
+					</section>
+		      </div>
+			</header>
+
+			<!--
+				engineeringleadership_800.png 320, 640
+				https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Same_size_different_resolutions
+			-->
+
+			<section class="primary__image">
+				<picture>
+				<img srcset="img/engineeringleadership_320.jpg 320w,
+							 img/engineeringleadership_640.jpg 640w,
+							 img/engineeringleadership_800.jpg 760w",
+				     sizes="(max-width: 320px) 280x,
+				            (max-width: 640px) 600px,
+				            800px"
+				     src="img/engineeringleadership_800.jpg" alt="Engineering Leaderships">
+				 </picture>
+			 </section>
+
+
+
+
+		</main>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
