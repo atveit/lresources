@@ -25,5 +25,7 @@ Using flexbox (from CSS). Some dynamic sizing of images with `<picture>`, e.g. a
 
 ## How was the page validated?
 
-Used https://validator.w3.org/nu/
+HTML - https://validator.w3.org/nu/
+CSS  - https://jigsaw.w3.org/css-validator/
+
 
