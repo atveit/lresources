@@ -1,1 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+        display: flex;
+        flex-wrap: wrap;
+ }
+
+.featured_image {
+	width: 100%;
+}
+
+.swe_leadership_resources {
+	width: 100%;
+}
+
+.swe_leadership_resource {
+	width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+	.swe_leadership_resources {
+		width: 100%;
+	}
+	.swe_leadership_resource {
+		width: 50%; 
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.swe_leadership_resources {
+		width: 1000px;
+		margin-left: auto;
+        margin-right: auto;
+	}
+
+	.swe_leadership_resource {
+		width: 33.3333333%;
+	}
+
+	.featured__image {
+		width: 800px;
+		margin-left: auto;
+        margin-right: auto;
+	}
+}
