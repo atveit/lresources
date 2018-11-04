@@ -1,10 +1,14 @@
 # Responsive web site (project 1 Udacity frontend nanodegree)
 
-## What is the site about?
+## 0) How to see this site?
+
+Open `index.html` in a browser from inside lresources directory
+
+## 1) What is the site about?
 
 Recommendations about Software Engineering Leadership resources, e.g. books.
 
-## What type of responsive approach is used?
+## 2) What type of responsive approach is used?
 
 Using flexbox (from CSS). Some dynamic sizing of images with `<picture>`, e.g. as shown below:
 
