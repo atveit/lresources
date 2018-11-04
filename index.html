@@ -25,6 +25,8 @@
 				engineeringleadership_800.png 320, 640
 				https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Same_size_different_resolutions
 
+				https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping
+
 				https://stackoverflow.com/questions/40862933/css-flexbox-within-flexbox
 			-->
 
@@ -32,72 +34,84 @@
 
 				<section class="upper_left">
 					<article>
-						upper left
+						<img src="img/reindeer.png">
 					</article>
 				</section>
 
 				<section class="upper_right">
 					<article class="vertical-container upper_right_header">
-						foo
+						Software Engineering Leadership
 					</article>
 					<article class="vertical-container upper_right_footer">
-						bar
+						Resources Maintained by: Amund Tveit
 					</article>
 				</section>
 
+
+				<!-- https://www.w3schools.com/tags/tag_hr.asp -->
+				<section class="horizontal_border">
+					<hr class="top_border"/>
+				</section>
 				
 				<section class="featured__image">
 					<article>
-						<img src="img/engineeringleadership_1000.jpg" alt="">
-					</article>
-				</section>
+						<picture>
+							<source srcset="img/engineeringleadership_1000.jpg" media="(min-width: 1000px)"/>
+							<source srcset="img/engineeringleadership_800.jpg" media="(min-width: 800px)"/>
+							<source srcset="img/engineeringleadership_640.jpg" media="(min-width: 640px)"/>
+							<img src="img/engineeringleadership_320.jpg"/>
+						</picture>
+							<!--
+								<img src="img/engineeringleadership_1000.jpg" alt=""> -->
+							</article> 
+						</section>
 
-				<section class="resource__header">
-					<article>
-						<h1>Recommended books</h1>
-					</article>
-				</section>
+						<section class="resource__header">
+							<article>
+								<h1 class="swe_leadership_resource_title">Recommended books</h1>
+							</article>
+						</section>
 
-				<section class="radical_candor">
-					<article>
-						<a href="https://www.radicalcandor.com/the-book/">
-							<img src="img/radical_candor_book_302_458.png"
-							alt="">
-							<h2 class="swe_leadership_resource_title">Radical Candor</h2>
-						</a>
-					</article>
-				</section>
+						<section class="radical_candor">
+							<article>
+								<a href="https://www.radicalcandor.com/the-book/">
+									<img src="img/radical_candor_book_302_458.png"
+									alt="">
+									<h2 class="swe_leadership_resource_title">Radical Candor</h2>
+								</a>
+							</article>
+						</section>
 
-				<section class="leaders_eat_last">
-					<article>
-						<a href="https://startwithwhy.com/product/leaders-eat-last/">
-							<img src="img/leaders_eat_last_302_458.png"
-							alt="">
-							<h2 class="swe_leadership_resource_title">Leaders Eat Last</h2>
-						</a>
-					</article>
-				</section>
-				<section class="managers_path">
-					<article>
-						<a href="http://shop.oreilly.com/product/0636920056843.do">
-							<img src="img/managers_path_302_458.png"
-							alt="">
-							<h2 class="swe_leadership_resource_title">The Manager's Path</h2>
-						</a>
-					</article>
-				</section>
-
-
-			</section>
+						<section class="leaders_eat_last">
+							<article>
+								<a href="https://startwithwhy.com/product/leaders-eat-last/">
+									<img src="img/leaders_eat_last_302_458.png"
+									alt="">
+									<h2 class="swe_leadership_resource_title">Leaders Eat Last</h2>
+								</a>
+							</article>
+						</section>
+						<section class="managers_path">
+							<article>
+								<a href="http://shop.oreilly.com/product/0636920056843.do">
+									<img src="img/managers_path_302_458.png"
+									alt="">
+									<h2 class="swe_leadership_resource_title">The Manager's Path</h2>
+								</a>
+							</article>
+						</section>
 
 
-		</main>
+					</section>
 
-		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-		<script>
-			window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-			ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-		</script>
-		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-	</body>
-	</html>
+
+				</main>
+
+				<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+				<script>
+					window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+					ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+				</script>
+				<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+			</body>
+			</html>
