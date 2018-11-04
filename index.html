@@ -1,90 +1,100 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Software Engineering Leadership Resources</title>
-        <meta name="description" content="">
-        
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Software Engineering Leadership Resources</title>
+	<meta name="description" content="">
 
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    </head>
-    <body>
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-		<main>
-			<header>
-				<div class="header__inner">
-					<img class="header__logo" src="" alt="somelogohere">
-					<section>
-						<h1 class="header__title">Software Engineering Leadership Resources</h1>
-						<h2 class="header__author">Maintained by Amund Tveit</h2>
-					</section>
-		      </div>
-			</header>
+        <main>
 
 			<!--
 				engineeringleadership_800.png 320, 640
 				https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Same_size_different_resolutions
+
+				https://stackoverflow.com/questions/40862933/css-flexbox-within-flexbox
 			-->
 
-			<section class="featured__image">
-				<picture>
-				<img srcset="img/engineeringleadership_320.jpg 320w,
-							 img/engineeringleadership_640.jpg 640w,
-							 img/engineeringleadership_800.jpg 800w",
-				     sizes="(max-width: 320px) 280x,
-				            (max-width: 640px) 600px,
-				            760px"
-				     src="img/engineeringleadership_800.jpg" alt="Engineering Leaderships">
-				 </picture>
-			 </section>
+			<section class="container horizontal">
 
-		<h1 class="swe_leadership_resources_title">
-				 		Recommended Leadership Books
-				 	</h1>
-			 <section class="swe_leadership_resources container">
-			 
-			 	<section class="swe_leadership_resource">
-			 		<article>
-			 			<img src="img/radical_candor_book_302_458.png"
-			 			alt="">
-			 			<h2 class="swe_leadership_resource_title">Radical Candor</h2>
-			 		</article>
-				 </section>
-				 <section class="swe_leadership_resource">
-				 	<article>
-				 			<img src="img/leaders_eat_last_302_458.png"
-				 			alt="">
-				 			<h2 class="swe_leadership_resource_title">Leaders Eat Last</h2>
-				 		</article>
-				 </section>
-				  <section class="swe_leadership_resource">
-				  	<article>
-				 			<img src="img/managers_path_302_458.png"
-				 			alt="">
-				 			<h2 class="swe_leadership_resource_title">The Manager's Path</h2>
-				 		</article>
-				 </section>
+				<section class="upper_left">
+					<article>
+						Upper Left
+					</article>
+				</section>
+
+				<section class="upper_right">
+					<article>
+						Upper Right
+					</article>
+				</section>
+
+				
+				<section class="featured__image">
+					<article>
+						<img src="img/engineeringleadership_800.jpg" alt="">
+					</article>
+				</section>
+
+				<section class="resource__header">
+					<article>
+						<h1>Recommended books</h1>
+					</article>
+				</section>
+
+				<section class="radical_candor">
+					<article>
+						<a href="https://www.radicalcandor.com/the-book/">
+							<img src="img/radical_candor_book_302_458.png"
+							alt="">
+							<h2 class="swe_leadership_resource_title">Radical Candor</h2>
+						</a>
+					</article>
+				</section>
+
+				<section class="leaders_eat_last">
+					<article>
+						<a href="https://startwithwhy.com/product/leaders-eat-last/">
+							<img src="img/leaders_eat_last_302_458.png"
+							alt="">
+							<h2 class="swe_leadership_resource_title">Leaders Eat Last</h2>
+						</a>
+					</article>
+				</section>
+				<section class="managers_path">
+					<article>
+						<a href="http://shop.oreilly.com/product/0636920056843.do">
+							<img src="img/managers_path_302_458.png"
+							alt="">
+							<h2 class="swe_leadership_resource_title">The Manager's Path</h2>
+						</a>
+					</article>
+				</section>
 
 
-			 </section>
+			</section>
 
 
 		</main>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
-</html>
+		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+		<script>
+			window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+			ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+		</script>
+		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+	</body>
+	</html>
