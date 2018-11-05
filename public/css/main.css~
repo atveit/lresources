@@ -42,12 +42,12 @@ body {
 }
 
 .upper_left {
-  width: 50%;
+  width: 30%;
   text-align: left;
 }
 
 .upper_right {
-  width: 50%;
+  width: 70%;
   text-align: right;
 }
 

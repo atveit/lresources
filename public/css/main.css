@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-evenly;
+	justify-content: space-between;
+  width: 100%;
+}
+
+.horizontal {
+  flex-direction: row;
+  background: transparent;
+}
+
+.horizontal_border {
+  width: 100%;
+}
+
+.top_border {
+  border-width: 5px;
+  width: 100%;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.proper_title {
+  width: 100%;
+  text-align: right;
+}
+
+.maintainer {
+  width: 100%;
+  text-align: right;
+}
+
+.upper_left {
+  width: 30%;
+  text-align: left;
+}
+
+.upper_right {
+  width: 70%;
+  text-align: right;
+}
+
+.upper_right_header {
+  font-size: 2em;
+}
+
+.upper_right_footer {
+  font-size: 1.2em;
+}
+
+.upper_right {
+  width: 70%;
+}
+
+.featured__image {
+  width: 100%;
+  min-width: 100%;
+  page-break-after: always; 
+}
+
+.resource__header {
+  width: 100%;
+  min-width: 100%;
+  page-break-after: always; 
+}
+
+.resource_header_title {
+  font-size: 1.4em;
+
+}
+
+.swe_leadership_resource_title {
+  font-size: 1.9em;
+}
+
+.radical_candor .leaders_eat_last .managers_path {
+  width: 100%;
+  font-size: 1.6em;
+}
+
+@media screen and (min-width: 640px) {
+  .radical_candor .leaders_eat_last .managers_path {
+   width: 50%;
+ }
+
+ .body {
+   font-size: 200%;
+ }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+   width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .radical_candor .leaders_eat_last .managers_path {
+   width: 33.3333333%;
+   flex: 1;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .featured__image .resource__header {
+   width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+}
