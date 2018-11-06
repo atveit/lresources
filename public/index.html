@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 
 	<link rel="manifest" href="site.webmanifest">
-	<link rel="apple-touch-icon" href="icon.webp">
+	<link rel="apple-touch-icon" href="icons/icon.webp">
 	<!-- Place favicon.ico in the root directory -->
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -34,13 +34,16 @@
 			<div class="container horizontal">
 
 				<div class="upper_left">
-					<img src="img/reindeer.png" alt="site logo">
-				</div>
+					<picture>
+						<source srcset="img/reindeer.webp" type="image/webp">
+							<img src="img/reindeer.png" alt="Logo">
+						</picture>
+					</div>
 
-				<div class="upper_right">
-					<div class="vertical-container upper_right_header">
-					  Software Engineering Leadership Resources
-					</div> 
+					<div class="upper_right">
+						<div class="vertical-container upper_right_header">
+							Software Engineering Leadership Resources
+						</div> 
 					<!-- <div class="vertical-container upper_right_footer">
 					</div> -->
 				</div>
@@ -53,10 +56,10 @@
 				
 				<div class="featured__image">
 					<picture>
-						<source srcset="img/engineeringleadership_1000.webp" media="(min-width: 1000px)"/>
-						<source srcset="img/engineeringleadership_800.webp" media="(min-width: 800px)"/>
-						<source srcset="img/engineeringleadership_640.webp" media="(min-width: 640px)"/>
-						<img src="img/engineeringleadership_320.webp" alt="engineering leadership image"/>
+						<source srcset="img/engineeringleadership_1000.webp" type="image/webp" media="(min-width: 1000px)"/>
+						<source srcset="img/engineeringleadership_800.webp" type="image/webp" media="(min-width: 800px)"/>
+						<source srcset="img/engineeringleadership_640.webp" type="image/webp" media="(min-width: 640px)"/>
+						<img src="img/engineeringleadership_320.png" alt="engineering leadership image"/>
 					</picture>
 				</div>
 
@@ -70,64 +73,71 @@
 				<div class="radical_candor">
 					<article>
 						<a href="https://www.radicalcandor.com/the-book/">
-							<img src="img/radical_candor_book_302_458.webp"
-							alt="">
-							<h2 class="swe_leadership_resource_title">Radical Candor</h2>
-						</a>
-					</article>
-				</div>
+							<picture>
+								<source srcset="img/radical_candor_302_458.webp" type="image/webp">
+									<img src="img/radical_candor_book_302_458.png" alt="">
+									</picture>
+									<h2 class="swe_leadership_resource_title">Radical Candor</h2>
+								</a>
+							</article>
+						</div>
 
-				<div class="leaders_eat_last">
-					<article>
-						<a href="https://startwithwhy.com/product/leaders-eat-last/">
-							<img src="img/leaders_eat_last_302_458.webp"
-							alt="">
-							<h2 class="swe_leadership_resource_title">Leaders Eat Last</h2>
-						</a>
-					</article>
-				</div>
-				<div class="managers_path">
-					<article>
-						<a href="http://shop.oreilly.com/product/0636920056843.do">
-							<img src="img/managers_path_302_458.webp"
-							alt="">
-							<h2 class="swe_leadership_resource_title">The Manager's Path</h2>
-						</a>
-					</article>
-				</div>
+						<div class="leaders_eat_last">
+							<article>
+								<a href="https://startwithwhy.com/product/leaders-eat-last/">
+									<picture>
+										<source srcset="img/leaders_eat_last_302_458.webp" type="image/webp">
+										<img src="img/leaders_eat_last_302_458.png"
+											alt="">
+										</picture>
+										<h2 class="swe_leadership_resource_title">Leaders Eat Last</h2>
+									</a>
+								</article>
+							</div>
+							<div class="managers_path">
+								<article>
+									<a href="http://shop.oreilly.com/product/0636920056843.do">
+										<picture>
+											<source srcset="img/managers_path_302_458.webp" type="image/webp">
+												<img src="img/managers_path_302_458.png" alt="">
+											</picture>
+											<h2 class="swe_leadership_resource_title">The Manager's Path</h2>
+										</a>
+									</article>
+								</div>
 
-			</div>
+							</div>
 
-		</main>
+						</main>
 
-<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-<script>
+						<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+						<script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyAfM5gZFr-WlyEmMdKW7P6AOi9v55CpB_A",
-    authDomain: "engineeringleadership-a7ca5.firebaseapp.com",
-    databaseURL: "https://engineeringleadership-a7ca5.firebaseio.com",
-    projectId: "engineeringleadership-a7ca5",
-    storageBucket: "",
-    messagingSenderId: "105467447869"
+  	apiKey: "AIzaSyAfM5gZFr-WlyEmMdKW7P6AOi9v55CpB_A",
+  	authDomain: "engineeringleadership-a7ca5.firebaseapp.com",
+  	databaseURL: "https://engineeringleadership-a7ca5.firebaseio.com",
+  	projectId: "engineeringleadership-a7ca5",
+  	storageBucket: "",
+  	messagingSenderId: "105467447869"
   };
   firebase.initializeApp(config);
 </script>
 
- <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function() {
-                console.log('Service Worker Registered');
-          });
-      }
-    </script>
+<script>
+	if('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/sw.js')
+		.then(function() {
+			console.log('Service Worker Registered');
+		});
+	}
+</script>
 
-		<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-		<script>
-			window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-			ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-		</script>
-		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-	</body>
-	</html>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+	window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+	ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>
